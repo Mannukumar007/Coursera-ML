@@ -68,12 +68,12 @@ Suppose that for some linear regression problem (say, predicting housing prices 
 
 Your Answer		Score	Explanation
 
-For this to be true, we must have θ0=0 and θ1=0 so that hθ(x)=0	Correct	0.25	If J(θ0,θ1)=0, that means the line defined by the equation "y=θ0+θ1x" perfectly fits all of our data. There's no particular reason to expect that the values of θ0 and θ1 that achieve this are both 0 (unless y(i)=0 for all of our training examples).
+For this to be true, we must have θ0=0 and θ1=0 so that hθ(x)=0	InCorrect	0.25	If J(θ0,θ1)=0, that means the line defined by the equation "y=θ0+θ1x" perfectly fits all of our data. There's no particular reason to expect that the values of θ0 and θ1 that achieve this are both 0 (unless y(i)=0 for all of our training examples).
 
-This is not possible: By the definition of J(θ0,θ1), it is not possible for there to exist θ0 and θ1 so that J(θ0,θ1)=0	Correct	0.25	If all of our training examples lie perfectly on a line, then J(θ0,θ1)=0 is possible.
+This is not possible: By the definition of J(θ0,θ1), it is not possible for there to exist θ0 and θ1 so that J(θ0,θ1)=0	Incorrect		If all of our training examples lie perfectly on a line, then J(θ0,θ1)=0 is possible.
 
 Gradient descent is likely to get stuck at a local minimum and fail to find the global minimum.	Inorrect	0.00	The cost function J(θ0,θ1) for linear regression has no local optima (other than the global minimum), so gradient descent will not get stuck at a bad local minimum.
 
-Our training set can be fit perfectly by a straight line, i.e., all of our training examples lie perfectly on some straight line.	Inorrect	0.00	If J(θ0,θ1)=0, that means the line defined by the equation "y=θ0+θ1x" perfectly fits all of our data.
+Our training set can be fit perfectly by a straight line, i.e., all of our training examples lie perfectly on some straight line.	Correct.	0.00	If J(θ0,θ1)=0, that means the line defined by the equation "y=θ0+θ1x" perfectly fits all of our data.
 
-Total		0.50 / 1.00	
+Total		1.00/ 1.00	
